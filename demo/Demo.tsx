@@ -43,6 +43,7 @@ import {
 } from '../src';
 
 import './Demo.css';
+
 // import exampleImage from './example.png';
 
 class Demo extends Component {
