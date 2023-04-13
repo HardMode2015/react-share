@@ -194,7 +194,7 @@ export default class ShareButton<LinkOptions> extends Component<Props<LinkOption
 
     const newStyle = resetButtonStyle
       ? {
-          width: 220,
+          width: 120,
           height: 60,
           borderRadius: 5,
           display: 'flex',
@@ -204,8 +204,6 @@ export default class ShareButton<LinkOptions> extends Component<Props<LinkOption
           alignSelf: 'right',
           fontSize: 12,
           fontFamily: 'Cairo',
-          FontWeight: 'bold',
-          // backgroundColor: 'transparent',
           border: 'none',
           padding: 15,
           color: 'inherit',
@@ -217,7 +215,6 @@ export default class ShareButton<LinkOptions> extends Component<Props<LinkOption
           ...style,
           ...(disabled && disabledStyle),
         };
-
 
     return (
       <button
