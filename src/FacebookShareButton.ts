@@ -16,7 +16,7 @@ function facebookLink(url: string, { quote, hashtag }: { quote?: string; hashtag
 }
 
 const FacebookShareButton = createShareButton<{ quote?: string; hashtag?: string }>(
-  'facebook',
+  'فيس بوك',
   facebookLink,
   props => ({
     quote: props.quote,

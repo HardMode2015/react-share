@@ -33,7 +33,7 @@ const TwitterShareButton = createShareButton<{
   hashtags?: string[];
   related?: string[];
 }>(
-  'twitter',
+  'تويتر',
   twitterLink,
   props => ({
     hashtags: props.hashtags,

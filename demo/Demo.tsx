@@ -72,11 +72,11 @@ class Demo extends Component {
             <FacebookIcon size={32} round />
           </FacebookShareButton>
 
-          <div>
+          {/* <div>
             <FacebookShareCount url={shareUrl} className="Demo__some-network__share-count">
               {count => count}
             </FacebookShareCount>
-          </div>
+          </div> */}
         </div>
 
         <div className="Demo__some-network">
@@ -127,6 +127,17 @@ class Demo extends Component {
         </div>
 
         <div className="Demo__some-network">
+          <EmailShareButton
+            url={shareUrl}
+            subject={title}
+            body="body"
+            className="Demo__some-network__share-button"
+          >
+            <EmailIcon size={32} round />
+          </EmailShareButton>
+        </div>
+
+        {/* <div className="Demo__some-network">
           <LinkedinShareButton url={shareUrl} className="Demo__some-network__share-button">
             <LinkedinIcon size={32} round />
           </LinkedinShareButton>
@@ -213,9 +224,9 @@ class Demo extends Component {
           >
             <LivejournalIcon size={32} round />
           </LivejournalShareButton>
-        </div>
+        </div> */}
 
-        <div className="Demo__some-network">
+        {/* <div className="Demo__some-network">
           <MailruShareButton
             url={shareUrl}
             title={title}
@@ -223,19 +234,10 @@ class Demo extends Component {
           >
             <MailruIcon size={32} round />
           </MailruShareButton>
-        </div>
+        </div> */}
 
-        <div className="Demo__some-network">
-          <EmailShareButton
-            url={shareUrl}
-            subject={title}
-            body="body"
-            className="Demo__some-network__share-button"
-          >
-            <EmailIcon size={32} round />
-          </EmailShareButton>
-        </div>
-        <div className="Demo__some-network">
+
+        {/* <div className="Demo__some-network">
           <ViberShareButton
             url={shareUrl}
             title={title}
@@ -310,7 +312,7 @@ class Demo extends Component {
           <div>
             <HatenaShareCount url={shareUrl} className="Demo__some-network__share-count" />
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

@@ -194,10 +194,21 @@ export default class ShareButton<LinkOptions> extends Component<Props<LinkOption
 
     const newStyle = resetButtonStyle
       ? {
-          backgroundColor: 'transparent',
+          width: 220,
+          height: 60,
+          borderRadius: 5,
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignContent: 'right',
+          alignItems: 'center',
+          alignSelf: 'right',
+          fontSize: 12,
+          fontFamily: 'Cairo',
+          FontWeight: 'bold',
+          // backgroundColor: 'transparent',
           border: 'none',
-          padding: 0,
-          font: 'inherit',
+          padding: 15,
+          // font: 'inherit',
           color: 'inherit',
           cursor: 'pointer',
           ...style,
@@ -208,6 +219,7 @@ export default class ShareButton<LinkOptions> extends Component<Props<LinkOption
           ...(disabled && disabledStyle),
         };
 
+
     return (
       <button
         {...rest}
@@ -217,7 +229,7 @@ export default class ShareButton<LinkOptions> extends Component<Props<LinkOption
         ref={forwardedRef}
         style={newStyle}
       >
-        {children}
+        {children} {networkName}
       </button>
     );
   }

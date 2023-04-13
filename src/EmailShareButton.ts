@@ -12,7 +12,7 @@ function emailLink(url: string, { subject, body, separator }: Options) {
 }
 
 const EmailShareButton = createShareButton<Options>(
-  'email',
+  'أيميل',
   emailLink,
   props => ({
     subject: props.subject,

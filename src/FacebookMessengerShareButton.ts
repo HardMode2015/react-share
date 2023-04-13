@@ -25,7 +25,7 @@ function facebookMessengerLink(url: string, { appId, redirectUri, to }: Options)
 }
 
 const FacebookMessengerShareButton = createShareButton<Options>(
-  'facebookmessenger',
+  'ماسنجر',
   facebookMessengerLink,
   props => ({
     appId: props.appId,

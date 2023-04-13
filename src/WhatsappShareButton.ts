@@ -19,7 +19,7 @@ function whatsappLink(url: string, { title, separator }: { title?: string; separ
 }
 
 const WhatsappShareButton = createShareButton<{ title?: string; separator?: string }>(
-  'whatsapp',
+  'واتساب',
   whatsappLink,
   props => ({
     title: props.title,
