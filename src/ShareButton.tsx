@@ -208,7 +208,6 @@ export default class ShareButton<LinkOptions> extends Component<Props<LinkOption
           // backgroundColor: 'transparent',
           border: 'none',
           padding: 15,
-          // font: 'inherit',
           color: 'inherit',
           cursor: 'pointer',
           ...style,
